@@ -12,6 +12,12 @@
     src: url("../fonts/OpenSans-Regular.woff");
 }
 
+html, body {
+  width:100%; 
+  height:100%; 
+  overflow-x:hidden;
+}
+
 .welcome {
   position: relative;
   color: #000000;
@@ -81,12 +87,19 @@ a {
 .column-content {
   display: flex;
  justify-content: space-between;
-  margin: 65px 230px 65px 230px;
+  margin: 65px 19%;
+}
+
+.trend-posts {
+  display: flex;
+  flex-direction: row;
 }
 
 .trends-tittle,
 .products-tittle  {
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 28px;
 }
 
 .trends-tittle:after {
@@ -98,29 +111,79 @@ a {
   border-bottom: 5px solid #e1d8bd;
 }
 
-.trend-prewie {
-    background: #000000;
+.trend-1 {
   position: relative;
-  display: inline-block;
-  padding-left: 0,2%;
-  width: 22%;
-  overflow: auto;
+  color: #000000;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: url("../images/trend1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
-.trend-prewie:nth-child(n+2){
+.trend-2 {
+  position: relative;
+  color: #000000;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: url("../images/trend2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.trend-3 {
+  position: relative;
+  color: #000000;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: url("../images/trend3.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.trend-4 {
+  position: relative;
+  color: #000000;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: url("../images/trend4.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.trend-1, 
+.trend-2,
+.trend-3,
+.trend-4 {
+  width: calc(25% - 4px);
+}
+
+.trend-1,
+.trend-2,
+.trend-3 {
   margin-right: 4px;
 }
-
-.trend-photo {
-  opacity: 0.4;
-
+.trend-1:after, 
+.trend-2:after,
+.trend-3:after,
+.trend-4:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .trend-content {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
+  margin-left: 18px;
+  margin-top: 158px;
+  padding: 39px 96px 32px 33px;
   border: 1px solid #e1d8bd;
+  z-index: 2;
 }
 
 .trend-tags,
@@ -434,7 +497,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 230px 0 230px;
+  padding: 0 19% 0 19%;
+
 }
 
 .socials {
@@ -446,23 +510,118 @@ footer {
 }
 
 .socials-item {
-  padding: 31px 14px;
+  padding: 31px 30px;
 }
 
 .socials-item:nth-child(1){
-  padding-left: 475px;
+  padding-left: 39.5%;
 }
 
 .socials-item:nth-last-child(-n+1) {
-  padding-right: 475px;
+  padding-right: 39.5%;
 }
 
 .copiright {
   margin: 74px 0 0 0 ;
-  padding: 0 480px 42px 480px;
+  padding: 0 40% 42px 480%;
   text-align: center;
 }
 
 .copiright-link{
   color: #757575;
+}
+
+@media(max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+  .welcome {
+    background-image: url("../images/banner-mobile.jpg");
+    width: 100%;
+  }
+  .navigation {
+      display: none;
+  }
+  .logo {
+    width: 74%;
+    padding-top: 225px; 
+  }
+  .trend-posts {
+    display: flex;
+    flex-direction: column;
+  }
+  .trend-1,
+  .trend-2,
+  .trend-3,
+  .trend-4 {
+    width: 100%;
+    margin:0px 0px 3px 0px;
+  }
+  .column-content {
+    display: flex;
+    flex-direction: column; 
+    margin: 0 0 44px 0;
+  }
+  .post {
+    display: flex;
+    flex-direction: column;
+  }
+  .products {
+  display: flex;
+  flex-direction: column;
+  }
+  .product-item {
+    margin-bottom: 215px;
+  }
+}
+@media(min-width: 641px) and (max-width: 1200px){
+  body {
+    font-size: 15px;
+  }
+  .welcome {
+    background-image: url("../images/banner-bg-tablet.jpg");
+    width: 100%;
+  }
+  .welcome-items {
+    padding: 0px 35px 0px 35px;
+  }
+  .navigation {
+    display: none;
+  }
+  .column-content {
+    margin: 6.5% 0%;
+    padding: 0% 4.5%;
+  }
+  .trend-posts {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .trend-1,
+  .trend-2,
+  .trend-3,
+  .trend-4 {
+    width: calc(50% - 4px);
+  }
+  .trend-1,
+  .trend-3 {
+    margin-right: 4px;
+  }
+
+  .trend-1,
+  .trend-2 {
+    margin-bottom: 3px;
+  }
+
+  .post {
+    display: flex;
+    flex-direction: column; 
+  }
+  .products {
+    width: 100%;
+    margin: 4% 33%;
+    padding: 0% 4.5%;
+  }
+  .product-item {
+    width: 44%;
+  }
 }
