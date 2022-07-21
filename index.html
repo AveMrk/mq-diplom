@@ -25,8 +25,7 @@
   <div class="trends">
   	  <h2 class="trends-tittle">Сейчас в тренде</h2>
   	  <div class="trend-posts">
-        <div class="trend-prewie">
-  	  	  <img src="images/trend1.jpg" class="trend-photo" alt="Фото комнатных растений">
+        <div class="trend-1">
   	  	  <div class="trend-content">
   	        <ul class="trend-tags">
   	          <li><a class="trend-tag" href=#0>Lifestyle</a></li>
@@ -35,8 +34,7 @@
   	        <h2 class="trend-tittle">Сейчас в тренде: сад на подоконнике</h2>
   	      </div>
   	    </div>
-  	    <div class="trend-prewie">
-  	      <img src="images/trend2.jpg" class="trend-photo" alt="Фото сыров">
+  	    <div class="trend-2">
   	        <div class="trend-content">
   	        <ul class="trend-tags">
   	          <li><a class="trend-tag" href=#0>Food</a></li>
@@ -44,8 +42,7 @@
   	        <h2 class="trend-tittle">Сыры на красивых картинках из интернета: какие они на вкус?</h2>
   	    </div>
   	    </div>
-        <div class="trend-prewie">
-          <img src="images/trend3.jpg" class="trend-photo" alt="Горный пейзаж">
+        <div class="trend-3">
           <div class="trend-content">
   	        <ul class="trend-tags">
   	          <li><a class="trend-tag" href=#0>Lifestyle</a></li>
@@ -54,8 +51,7 @@
   	        <h2 class="trend-tittle">Собираемся в первый поход в горы</h2> 
   	    </div>
   	    </div>
-        <div class="trend-prewie">
-   	      <img src="images/trend4.jpg" class="trend-photo" alt="Фото лимонов">
+        <div class="trend-4">
    	      <div class="trend-content">
   	        <ul class="trend-tags">
   	          <li><a class="trend-tag" href=#0>Food</a></li>
@@ -224,7 +220,12 @@
       <h2 class="products-tittle">Наши изделия</h2>
       <div class="products">
       	<div class="product-item">
-      	  <img src="images/shop-item-desk1.jpg" class="product-image" alt="Фото подушки">
+      	  <picture class="product-banner">
+      	    <source srcset="images/shop-item-mobile1.jpg 1x, images/shop-item-mobile1.jpg 2x" media="(max-width: 640px)">
+			<source srcset="images/shop-item-tablet1.jpg 1x, images/shop-item-tablet1.jpg 2x" media="(min-width: 641px) and (max-width: 1200px)">
+			<source srcset="images/shop-item-desk1.jpg 1x, images/shop-item-desk1.jpg 2x" media="(min-width: 1201px)">
+      	    <img src="images/shop-item-desk1.jpg 1x, images/shop-item-desk1.jpg 2x" class="product-banner-image" alt="Фото подушки">
+      	  </picture>
       	  <div class="product-content">
       	    <h3 class="product-tittle">Подушки на диван</h3>
       	    <p>Набор из двух подушек с модными принтами. Видео о создании <a href="#0" class="product-link">здесь</a>.</p>
@@ -233,8 +234,13 @@
       	    <button type="button" class="product-button">В магазин</button>
           </div>
       	</div>
-      	<div class="product-item">
-      	  <img src="images/shop-item-desk2.jpg" class="product-image" alt="Фото куклы Зайчик">
+      	<div class="product-item">      	  
+      	  <picture class="product-banner">
+      	    <source srcset="images/shop-item-mobile2.jpg 1x, images/shop-item-mobile2.jpg 2x" media="(max-width: 640px)">
+			<source srcset="images/shop-item-tablet2.jpg 1x, images/shop-item-tablet2.jpg 2x" media="(min-width: 641px) and (max-width: 1200px)">
+			<source srcset="images/shop-item-desk2.jpg 1x, images/shop-item-desk2.jpg 2x" media="(min-width: 1201px)">
+      	    <img src="images/shop-item-desk2.jpg 1x, images/shop-item-desk2.jpg 2x" class="product-image" alt="Фото куклы Зайчик">
+      	  </picture>
       	  <div class="product-content">
       	    <h3 class="product-tittle">Кукла "Зайчик"</h3>
       	    <p>Интреьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="#0" class="product-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
@@ -243,7 +249,12 @@
       	  </div>
       	</div>
       	<div class="product-item">
-      	  <img src="images/shop-item-desk3.jpg" class="product-image" alt="Фото рамки">
+          <picture class="product-banner">
+      	    <source srcset="images/shop-item-mobile3.jpg 1x, images/shop-item-mobile3.jpg 2x" media="(max-width: 640px)">
+			<source srcset="images/shop-item-tablet3.jpg 1x, images/shop-item-tablet3.jpg 2x" media="(min-width: 641px) and (max-width: 1200px)">
+			<source srcset="images/shop-item-desk3.jpg 1x, images/shop-item-desk3.jpg 2x" media="(min-width: 1201px)">
+      	    <img src="images/shop-item-desk3.jpg 1x, images/shop-item-desk3.jpg 2x" class="product-image" alt="Фото рамки">
+      	  </picture>
       	  <div class="product-content">
       	    <h3 class="product-tittle">Шестиугольная рамка</h3>
       	    <p>Необычная рамка для украшения дома из видео <a href="#0" class="product-link">"Как сделать рамку из подручных средств за 30 минут"</a></p>
