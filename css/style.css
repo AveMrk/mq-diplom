@@ -15,7 +15,8 @@
 html, body {
   width:100%; 
   height:100%; 
-  overflow-x:hidden;
+  /*overflow-x:hidden;*/
+  /*overflow: auto;*/
 }
 
 .welcome {
@@ -62,6 +63,18 @@ html, body {
 .menu-list-item:hover,
 .news-tags:hover {
   text-decoration-line: underline;
+}
+
+.dropdown__list {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  padding: 20px 525px;
+  color: #e1d8bd;
+}
+
+.dropdown__list-active {
+  display: block;
 }
 
 a {
