@@ -9,7 +9,7 @@
   { font-style: normal;
     font-family: OpenSans;
     font-weight: 400;
-    src: url("../fonts/OpenSans-Regular.woff");
+    src: url("./../fonts/OpenSans-Regular.woff");
 }
 
 html, body {
@@ -25,7 +25,7 @@ html, body {
   position: relative;
   color: #000000;
   background: rgba(0, 0, 0, 0.4);
-  background-image: url("../images/banner-bg.jpg");
+  background-image: url("./../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
